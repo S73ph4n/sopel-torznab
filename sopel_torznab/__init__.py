@@ -34,8 +34,8 @@ def format_bytes(size):
         n += 1
     return str(size).ljust(6)+power_labels[n]+'B'
 
-@module.commands('torznab-search', 'tz-s')
-@module.example('.tz-s Manjaro+iso')
+@module.commands('torznab-search', 'trz-s')
+@module.example('.trz-s Manjaro+iso')
 def torznab_search(bot, trigger):
     """Search torrent indexer(s) using a torznab API."""
     bot.say('Searching torznab API for '+trigger.group(2)+ '...')
@@ -64,8 +64,8 @@ def torznab_search(bot, trigger):
     bot.say('End of search.')
     
 
-@module.commands('torznab-info', 'tz-i')
-@module.example('.tz-i 3')
+@module.commands('torznab-info', 'trz-i')
+@module.example('.trz-i 3')
 def torznab_info(bot, trigger):
     """Give info about a search result from a torznab API."""
     if 'torznab_result_list' not in bot.memory:
@@ -111,8 +111,8 @@ def format_bytes(size):
         n += 1
     return str(size).ljust(6)+power_labels[n]+'B'
 
-@module.commands('torznab-search', 'tz-s')
-@module.example('.tz-s Manjaro+iso')
+@module.commands('torznab-search', 'trz-s')
+@module.example('.trz-s Manjaro+iso')
 def torznab_search(bot, trigger):
     """Search torrent indexer(s) using a torznab API."""
     bot.say('Searching torznab API for '+trigger.group(2)+ '...')
@@ -141,8 +141,8 @@ def torznab_search(bot, trigger):
     bot.say('End of search.')
     
 
-@module.commands('torznab-info', 'tz-i')
-@module.example('.tz-i 3')
+@module.commands('torznab-info', 'trz-i')
+@module.example('.trz-i 3')
 def torznab_info(bot, trigger):
     """Give info about a search result from a torznab API."""
     if 'torznab_result_list' not in bot.memory:
